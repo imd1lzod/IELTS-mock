@@ -1,0 +1,156 @@
+@import 'antd/dist/reset.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles */
+*:focus {
+  outline: 2px solid #1890ff;
+  outline-offset: 2px;
+}
+
+/* Loading states */
+.ant-spin-dot-item {
+  background-color: #1890ff;
+}
+
+/* Button hover effects */
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Card hover effects */
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Form focus styles */
+.ant-input:focus,
+.ant-input-textarea:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+}
+
+/* Table styles */
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #333;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: rgba(24, 144, 255, 0.02);
+}
+
+/* Modal styles */
+.ant-modal-header {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 1.5rem 1.5rem 1rem;
+}
+
+.ant-modal-title {
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Progress bar styles */
+.ant-progress-bg {
+  background: linear-gradient(90deg, #1890ff, #40a9ff);
+}
+
+/* Switch styles */
+.ant-switch-checked {
+  background-color: #52c41a;
+}
+
+/* Radio styles */
+.ant-radio-wrapper:hover .ant-radio,
+.ant-radio:hover .ant-radio-inner,
+.ant-radio-input:focus + .ant-radio-inner {
+  border-color: #1890ff;
+}
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #1890ff;
+}
+
+.ant-radio-checked .ant-radio-inner::after {
+  background-color: #1890ff;
+}
+
+/* Typography styles */
+.ant-typography {
+  color: #1a1a1a;
+}
+
+.ant-typography.ant-typography-secondary {
+  color: #666;
+}
+
+/* Space component styles */
+.ant-space {
+  gap: 16px !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .ant-table {
+    font-size: 0.9rem;
+  }
+  
+  .ant-modal {
+    margin: 10px;
+    max-width: calc(100vw - 20px);
+  }
+  
+  .ant-form-item-label > label {
+    font-size: 0.9rem;
+  }
+}
