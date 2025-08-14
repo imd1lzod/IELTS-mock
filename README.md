@@ -14,8 +14,6 @@ Prisma ORM
 
 PostgreSQL
 
-JWT Authentication
-
 Swagger API Docs
 
 Frontend
@@ -23,8 +21,6 @@ Frontend
 React.js (Vite)
 
 TypeScript
-
-Ant Design UI
 
 React Router
 
@@ -56,8 +52,8 @@ Foydalanuvchi urinish tarixini ko‘rish
 
 3. Loyihani o‘rnatish
 3.1. Repository’ni klonlash
-git clone https://github.com/username/ielts-mock-platform.git
-cd ielts-mock-platform
+git clone https://github.com/imd1lzod/IELTS-mock.git
+cd IELTS-mock
 
 4. Backend
 O‘rnatish
@@ -65,11 +61,10 @@ cd backend
 npm install
 
 .env fayl namunasi
-DATABASE_URL="postgresql://postgres:password@localhost:5432/ielts?schema=public"
-JWT_SECRET="your_secret_key"
-PORT=3000
+DATABASE_URL="postgresql://postgres:password@localhost:5432/ielts
 
 Prisma migratsiya
+npx prisma generate
 npx prisma migrate dev
 
 Ishga tushirish
@@ -87,7 +82,7 @@ pnpm install
 VITE_API_BASE_URL=http://localhost:3000
 
 Ishga tushirish
-pnpm dev
+npm run dev
 
 
 Frontend http://localhost:5173 da ishlaydi.
